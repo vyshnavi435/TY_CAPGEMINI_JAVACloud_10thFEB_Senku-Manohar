@@ -5,7 +5,7 @@ public class CheckedException {
 	public static void main(String[] args) {
 		Properties properties = new Properties();
 		try {
-			properties.load(new FileReader("application.properties"));//change name to applications we'll get exception
+			properties.load(new FileReader("applications.properties"));//change name to applications we'll get exception
 		} catch (Exception e) {
 			System.err.println("Exception caught in try");
 			e.printStackTrace();//this method gives specific exception information even for general exception.
